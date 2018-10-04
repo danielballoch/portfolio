@@ -17,6 +17,7 @@ const FlexMain = styled.div`
   align-items: center;
   justify-content: center;
 `
+
 const Content = styled.div`
   align-items: center;
   min-width: 300px;
@@ -43,15 +44,6 @@ const Description = styled.div`
   flex: 1;
   margin-left: 18px;
   padding: 12px;
-`
-
-const Username = styled.h2`
-  margin: 0 0 12px 0;
-  padding: 0;
-`
-
-const Excerpt = styled.p`
-  margin: 0;
 `
 
 
