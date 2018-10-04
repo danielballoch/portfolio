@@ -8,14 +8,19 @@ import Layout from '../components/layout'
 
 
 
-const Container = styled.div`
-  margin: 3rem auto;
-  max-width: 600px;
-  height: 100%
+const FlexMain = styled.div`
+  margin: 3rem 2rem;
   display: flex;
+  flex-wrap: wrap;
+  heigt: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`
+const Content = styled.div`
+  align-items: center;
+  min-width: 300px;
+  margin: 0 auto 12px auto;
 `
 
 const UserWrapper = styled.div`
@@ -49,26 +54,37 @@ const Excerpt = styled.p`
   margin: 0;
 `
 
-const User = props => (
-  <UserWrapper>
-    <Avatar src={props.avatar} alt="" />
-    <Description>
-      <Username>{props.username}</Username>
-      <Excerpt>{props.excerpt}</Excerpt>
-    </Description>
-  </UserWrapper>
-)
 
 export default (props) => (
     <Layout>
-    <Container>
-    <User
-      username="Jane Doe"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-      excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-    <Img fluid={props.data.profile.childImageSharp.fluid} />
-  </Container>
+    <FlexMain>
+    
+
+
+    <Content>
+        <h1>The Process</h1>
+        <p>-ojectives</p>
+        <p>-plan and proritize</p>
+        <p>-(prototype, document, update) cycle</p>
+        <p>-finalise - trust, ongoing support, best way</p>
+    </Content>
+    <Content>
+        <h1>Tools I use - My learning</h1>
+        <p>content info</p>
+    </Content>
+    <Content>
+        <h1>company values</h1>
+        <p>-sprinkle throughout, show dont tell</p>
+    </Content>
+    <Content>
+        <h1>Skill set</h1>
+        <p>what i am, what I'm not</p>
+        <Img style={{
+           width: "50%",
+        }}
+        fluid={props.data.profile.childImageSharp.fluid} />
+    </Content>
+    </FlexMain>
     </Layout>
 )
 

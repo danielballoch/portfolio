@@ -24,7 +24,7 @@ list-style-type: none;
 
 const Header = () => (
     <Container>
-        <Link to="/"><Nav>Daniel</Nav></Link>
+        <Link to="/"><Nav>Work</Nav></Link>
         <Link to="/about/"><Nav>About</Nav></Link>
         <Link to="/services/"><Nav>Services</Nav></Link>
         <Link to="/contact"><Nav>Contact</Nav></Link>

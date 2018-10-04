@@ -23,10 +23,10 @@ const Item = styled.div`
 
 const Footer = () => (
     <Container>
-        <Item>social icons</Item>
+        {/* <Item>social icons</Item>
         <Item>Privacy Policy</Item>
-        <Item>Sitemap</Item>
-        <Item>© Daniel Balloch 2018</Item>
+        <Item>Sitemap</Item> */}
+        <Item>Daniel Balloch a web developer based in Hamilton, New Zealand. Follow me on <a>Drupal</a> and <a>twitter</a>, all rights reserverd © 2018</Item>
         
    </Container>
 )

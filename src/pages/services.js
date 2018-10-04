@@ -11,10 +11,13 @@ const FlexMain = styled.div`
   margin: 3rem 2rem;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
 const Content = styled.div`
   align-items: center;
-  min-width: 300px;
+  max-width: 600px;
   margin: 0 auto 12px auto;
 `
 
@@ -24,18 +27,24 @@ const Content = styled.div`
 export default () => (
  <Layout>
     <FlexMain>
-    <Content>
+    <Content> 
         <h1>Static website creation</h1>
+        
         <p>Full blown websites. Eccomerce, blogs, portfolios with all the bells and whistles.</p>
+        <hr/>
     </Content>
     
     <Content>
         <h1>Hosting and deployment</h1>
-        <p>I can get everything up and running for you. Domain name accusition, site hosting etc. </p>
+        
+        <p>I can get everything up and running for you or help along the way. Domain name accusition, site hosting etc. </p>
+        <hr/>
     </Content>
     <Content>
         <h1>CMS Integration</h1>
-        <p>Configure everything with a Content Managment System so you can easily make small changes without having to hire someone else or delve into the code</p>
+        
+        <p>Configure a Content Managment System so you can easily make small changes without having to hire someone else or delve into the code</p>
+        <hr/>
     </Content>
   </FlexMain>
   </Layout>
