@@ -9,19 +9,39 @@ import Header from '../components/header'
 
 
 const HeroWrapper = styled.div`
-height: 80vh;
+// height: 80vh;
 `
 
 const FlexMain = styled.div`
-  margin: 3rem 2rem;
-  display: flex;
-//   flex-wrap: wrap;
+max-width: 900px;
+display: flex;
 flex-direction: column;
+margin:auto 0;
 `
+const Flex = styled.div`
+margin: 3rem 1rem;
+display: flex;
+flex-wrap: wrap;
+`
+
 const Content = styled.div`
   align-items: center;
   max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+`
+const SmallContent = styled.div`
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+`
+const ContentCenter = styled.div`
+  align-items: center;
+  max-width: 900px;
   margin: 0 auto 12px auto;
+ text-align: center;
+ padding: 10px;
 `
 
 
@@ -31,33 +51,19 @@ export default (props) => (
     <Layout>
         
     <HeroWrapper>
-        <Img  style={{
-            left: 0,
-            top: 0,
-            width: "100%",
-            height: "80vh",
-            zIndex: "-1",
-           objectFit: "cover",
-           objectPosition: "50% 20%", /* default value: image is centered*/
-           position: "absolute"
-        }}
-        fluid={props.data.background.childImageSharp.fluid} />
-        <FlexMain>
-            <Content style={{
-                top: "25%",
-                alignSelf: "center",
-               position: "absolute",
-               textAlign: "center"
-            }}>
+        {/* <Img  
+        fluid={props.data.background.childImageSharp.fluid} /> */}
+        <Flex>
+            <ContentCenter>
                 <h1>Daniel Balloch</h1>
                 <h4>Creating custom websites that work everywhere.</h4>
-            </Content>
-        </FlexMain>
+            </ContentCenter>
+        </Flex>
         
-        
-    </HeroWrapper>
-        
-    <FlexMain>
+    </HeroWrapper> 
+   <FlexMain>
+   
+    <Flex>
     <Content>
     {/* Fast, responsive, secure, SEO and user friendly */}
     </Content>
@@ -67,21 +73,20 @@ export default (props) => (
         
     </Content> */}
     
-    <Content>
-        <h1>Design & Development</h1>
-        <p>I consider myself a designer over artist, meaning I keep the user in mind. The focus is on simplicity, consistency and responsiveness.</p>
-        <p>I do my research and try pick the best tech for the job. Right now for most clients that means static sites paired with APIs and if needed CMS.</p>
-    </Content>
-    <Content>
+    
+    <SmallContent>
         <h1>Aim</h1>
         <p>Help businesses and people grow customer connection, profit and reputation using online precence.</p>
+    </SmallContent>
+    <SmallContent>
         <h1>How</h1>
         <p>Tried and true design methods mixed with cutting edge web stack and hosting technologys.</p>
-       
-   
-    </Content>
+    </SmallContent>
+    </Flex>
 
-     <Content>
+
+    {/* <Flex>
+     <ContentCenter>
         <h1>Product example</h1>
         <p>*show website</p>
         <p>If I've implemented a content managment system with your product you can change or add any piece of content.
@@ -98,46 +103,57 @@ export default (props) => (
         My tech eliminates most of the need to rehire me (or another dev) and puts you in control,
          although if you can't be bothered and have a list of things to change I will
              </p>
-    </Content>
-    
-    
-    <Content>
-        <h2>My Tech</h2>
-        <p>*grid explaining seo, website load time, responsive design, </p>
-        <p>stats or blog to show this?</p>
-    </Content>
-    <Content>
+    </ContentCenter>
+    </Flex> */}
+
+    <Flex>
+    <ContentCenter>
+        <h2>All The Bells And Whistles</h2>
+        {/* <p>*grid explaining seo, website load time, responsive design, </p>
+        <p>stats or blog to show this?</p> */}
+    </ContentCenter>
+    </Flex>
+
+    <Flex>
+    <SmallContent>
+        <h2>Responsive Design</h2>
+        <p>Websites designed with all users in mind. Taking advantage of css grid, flexbox, javascript etc to optimize SmallContent and navigation.</p>
+    </SmallContent>
+    <SmallContent>
         <h2>Fast load times</h2>
         <p>optimized images, pre compiled static site, preload other pages etc = faster load time which means retained traffic and higher seo scores</p>
-    </Content>
-    <Content>
-        <h2>Hosting that scales</h2>
-        <p>cloud based hosting platforms which serve static files, user interaction done through apis on seperate server.</p>
-    </Content>
-    <Content>
-        <h2>Search Engine Optimization</h2>
-        <p>seo implementation - load time optimization as well as keywords in metadata, footer etc to increase google site ranking.</p>
-    </Content>
-    <Content>
-        <h2>Responsive Design</h2>
-        <p>Websites designed with all users in mind. Taking advantage of css grid, flexbox, javascript etc to optimize content and navigation.</p>
-    </Content>
-    <Content>
+    </SmallContent>
+    <SmallContent>
         <h2>User Experience</h2>
-        <p>Site layout which is easiy to navigate and makes sense for customers. Importent content prioritized, customer drawn in, familiar navigation etc etc.</p>
-    </Content>
-    <Content>
+        <p>Site layout which is easiy to navigate and makes sense for customers. Importent SmallContent prioritized, customer drawn in, familiar navigation etc etc.</p>
+    </SmallContent>
+    <SmallContent>
         <h2>High Security</h2>
         <p>With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced.
         You can also leverage the domain expertise of specialist third-party services.</p>
-    </Content>
-
-    <Content>
-        <h1>Sound good?</h1>
-        <p>See <a href="/contact">contact page</a> for my details.</p>
-    </Content>
+    </SmallContent>
+    <SmallContent>
+        <h2>SEO</h2>
+        <p>search engine optimization implemented - load time optimization as well as keywords in metadata, footer etc to increase google site ranking.</p>
+    </SmallContent>
+    <SmallContent>
+        <h2>Easy Editing</h2>
+        <p>CMS integration with instant builds to eliminate wasted time and money. If implemented with your product you can change or add any piece of content to an existing layout.</p>
+    </SmallContent>
 
     
+
+    
+  </Flex>
+
+    <Flex>
+  <SmallContent>
+        <h1>Sounds good?</h1>
+        <p>See <Link to="/contact">contact page</Link> for my details.</p>
+        
+    </SmallContent>
+  </Flex>
+
   </FlexMain>
     </Layout>
 )

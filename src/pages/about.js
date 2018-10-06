@@ -9,73 +9,79 @@ import Layout from '../components/layout'
 
 
 const FlexMain = styled.div`
-  margin: 3rem 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  heigt: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+max-width: 900px;
+display: flex;
+flex-direction: column;
+margin:auto;
+`
+const Flex = styled.div`
+margin: 2rem 1rem;
+display: flex;
+flex-wrap: wrap;
 `
 
 const Content = styled.div`
   align-items: center;
-  min-width: 300px;
+  max-width: 900px;
   margin: 0 auto 12px auto;
-`
-
-const UserWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 0 auto 12px auto;
-  &:last-child {
-    margin-bottom: 0;
-  }
-`
-
-const Avatar = styled.img`
-  flex: 0 0 96px;
-  width: 96px;
-  height: 96px;
-  margin: 0;
-`
-
-const Description = styled.div`
-  flex: 1;
-  margin-left: 18px;
-  padding: 12px;
+  padding: 10px;
 `
 
 
 export default (props) => (
     <Layout>
     <FlexMain>
+        
+    <Flex>
+        <Content>
+            <h1>Design & Development</h1>
+            <p>Being a designer over artist, means keeping the user in mind. The focus is on simplicity, consistency and responsiveness.</p>
+            <p>Using the best tech for the job. Right now for most cases that means static sites paired with APIs and if needed CMS.
+                If not, I'll be straight up and try make a reccomendation.</p>
+        </Content>
+    </Flex>
+
+    <Flex>
+        <Content>
+            <h1>Tools I use - My learning</h1>
+            <p>An interest in tech and business lead me to picking up my former web development learning from highschool.
+            This meant brushing up html, css, java and my design principles.
+            I then discovered the backend, learnt and used the MEANstack, before realiseing JAMstack would be the way to go for most clients needs. </p>
+            <p>In Short:
+            <ul>
+                <li>primarily self taught, online documentation, books, guides etc.</li>
+                <li>html, css, java</li>
+                <li>Some MEANstack experience</li>
+                <li>JAMstack Focus
+                    <ul>
+                        <li>Static Site Generators (gatsby, Next -may learn Hugo & Jekyll etc)</li>
+                        <li>APIs (forms, eccomerce, blog etc)</li>
+                        <li>CMS Integration (Netlify, headlessCMS etc)</li>
+                    </ul>
+                </li>
+                <li>Hosting
+                    <ul>
+                        <li>Hosting in CDN (Firebase, AWS S3, Cloudfront, Netlify)</li>
+                    </ul>
+                </li>
+            </ul>
+            </p>
+            
+            
+        </Content>
+    </Flex>
+
+     {/* <Flex>
+        <Content>
+            <h1>Who Am I?</h1>
+            
+        </Content>
+    </Flex> */}
+
+    {/* <Img style={{width: "80px",}}fluid={props.data.profile.childImageSharp.fluid} /> */}
+    {/* Working with me/testomonials */}
+    {/* company values-sprinkle throughout, show dont tell */}
     
-
-
-    <Content>
-        <h1>The Process</h1>
-        <p>-ojectives</p>
-        <p>-plan and proritize</p>
-        <p>-(prototype, document, update) cycle</p>
-        <p>-finalise - trust, ongoing support, best way</p>
-    </Content>
-    <Content>
-        <h1>Tools I use - My learning</h1>
-        <p>content info</p>
-    </Content>
-    <Content>
-        <h1>company values</h1>
-        <p>-sprinkle throughout, show dont tell</p>
-    </Content>
-    <Content>
-        <h1>Skill set</h1>
-        <p>what i am, what I'm not</p>
-        <Img style={{
-           width: "50%",
-        }}
-        fluid={props.data.profile.childImageSharp.fluid} />
-    </Content>
     </FlexMain>
     </Layout>
 )
