@@ -13,10 +13,10 @@ const HeroWrapper = styled.div`
 `
 
 const FlexMain = styled.div`
-max-width: 900px;
+max-width: 1080px;
 display: flex;
 flex-direction: column;
-margin:auto 0;
+margin:auto;
 `
 const Flex = styled.div`
 margin: 3rem 1rem;

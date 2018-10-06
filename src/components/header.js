@@ -12,22 +12,31 @@ const Container = styled.div`
 `
 const Nav = styled.div`
 padding: .75em 1em;
+`
+const StyledLink = styled(Link)`
 text-decoration: none;
 color: black;
 list-style-type: none;
+&:hover {
+    color:#FF4136;
+}
+&:active {
+    color: red;
+  }
 `
+const activeClassName = 'nav-item-active'
 
-    // margin: '0 auto',
-    // maxWidth: 960,
-    // padding: '1.45rem 1.0875rem'
+
+
+
     
 
 const Header = () => (
     <Container>
-        <Link to="/"><Nav>Work</Nav></Link>
-        <Link to="/about/"><Nav>About</Nav></Link>
-        <Link to="/services/"><Nav>Services</Nav></Link>
-        <Link to="/contact"><Nav>Contact</Nav></Link>
+        <StyledLink to="/" ><Nav>Work</Nav></StyledLink>
+        <StyledLink to="/about/" ><Nav>About</Nav></StyledLink>
+        <StyledLink to="/services/"><Nav>Services</Nav></StyledLink>
+        <StyledLink to="/contact" ><Nav>Contact</Nav></StyledLink>
    </Container>
 )
 
