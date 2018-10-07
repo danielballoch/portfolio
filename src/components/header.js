@@ -3,12 +3,15 @@ import { Link } from 'gatsby'
 import styled from "styled-components"
 
 const Container = styled.div`
+  position: fixed;
+  z-index: 3;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   top: 0;
-  postition: fixed;
+  width: 100%;
+  background-color: white;
 `
 const Nav = styled.div`
 padding: .75em 1em;

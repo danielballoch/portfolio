@@ -44,15 +44,14 @@ export default (props) => (
     <Flex>
         <Content>
             <h1>Tools I use - My learning</h1>
-            <p>An interest in tech and business lead me to picking up my former web development learning from highschool.
+            <p>An interest in tech and business lead me to picking up my former web development learning from highschool.</p>
+            <p>
             This meant brushing up html, css, java and my design principles.
             I then discovered the backend, learnt and used the MEANstack, before realiseing JAMstack would be the way to go for most clients needs. </p>
             <p>In Short:
             <ul>
-                <li>primarily self taught, online documentation, books, guides etc.</li>
-                <li>html, css, java</li>
-                <li>Some MEANstack experience</li>
-                <li>JAMstack Focus
+            <li>html, css, java</li>
+            <li>JAMstack Focus
                     <ul>
                         <li>Static Site Generators (gatsby, Next -may learn Hugo & Jekyll etc)</li>
                         <li>APIs (forms, eccomerce, blog etc)</li>
@@ -64,6 +63,10 @@ export default (props) => (
                         <li>Hosting in CDN (Firebase, AWS S3, Cloudfront, Netlify)</li>
                     </ul>
                 </li>
+                <li>primarily self taught, online documentation, books, guides etc.</li>
+                
+                <li>Some MEANstack experience</li>
+                
             </ul>
             </p>
             

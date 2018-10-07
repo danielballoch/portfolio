@@ -9,7 +9,11 @@ import Header from '../components/header'
 
 
 const HeroWrapper = styled.div`
-// height: 80vh;
+margin-top: 3em;
+display: flex;
+height: 40vh;
+align-items: center;
+
 `
 
 const FlexMain = styled.div`
@@ -22,6 +26,7 @@ const Flex = styled.div`
 margin: 3rem 1rem;
 display: flex;
 flex-wrap: wrap;
+// justify-content: space-around;
 `
 
 const Content = styled.div`
@@ -51,22 +56,20 @@ export default (props) => (
     <Layout>
         
     <HeroWrapper>
-        {/* <Img  
-        fluid={props.data.background.childImageSharp.fluid} /> */}
-        <Flex>
-            <ContentCenter>
-                <h1>Daniel Balloch</h1>
-                <h4>Creating custom websites that work everywhere.</h4>
-            </ContentCenter>
-        </Flex>
+        
+    {/* <Img  fluid={props.data.background.childImageSharp.fluid} /> */}
+        <ContentCenter>
+            <h1>Daniel Balloch</h1>
+            <h4>Creating custom websites that work everywhere.</h4>
+        </ContentCenter>
+        
         
     </HeroWrapper> 
    <FlexMain>
    
     <Flex>
-    <Content>
     {/* Fast, responsive, secure, SEO and user friendly */}
-    </Content>
+    
     {/* <Content>
         <h1>Latest project</h1>
         <p>*currently looking for work.*Explain goals and how I met them.</p>
@@ -76,7 +79,7 @@ export default (props) => (
     
     <SmallContent>
         <h1>Aim</h1>
-        <p>Help businesses and people grow customer connection, profit and reputation using online precence.</p>
+        <p>Help businesses and people grow customer connection, profit and reputation using online presence.</p>
     </SmallContent>
     <SmallContent>
         <h1>How</h1>
@@ -117,7 +120,7 @@ export default (props) => (
     <Flex>
     <SmallContent>
         <h2>Responsive Design</h2>
-        <p>Websites designed with all users in mind. Taking advantage of css grid, flexbox, javascript etc to optimize SmallContent and navigation.</p>
+        <p>Websites designed with all users in mind. Taking advantage of css grid, flexbox, javascript etc to optimize content and navigation.</p>
     </SmallContent>
     <SmallContent>
         <h2>Fast load times</h2>
@@ -125,7 +128,7 @@ export default (props) => (
     </SmallContent>
     <SmallContent>
         <h2>User Experience</h2>
-        <p>Site layout which is easiy to navigate and makes sense for customers. Importent SmallContent prioritized, customer drawn in, familiar navigation etc etc.</p>
+        <p>Site layout which is easiy to navigate and makes sense for customers. Importent content prioritized, customer drawn in, familiar navigation etc etc.</p>
     </SmallContent>
     <SmallContent>
         <h2>High Security</h2>
@@ -141,10 +144,16 @@ export default (props) => (
         <p>CMS integration with instant builds to eliminate wasted time and money. If implemented with your product you can change or add any piece of content to an existing layout.</p>
     </SmallContent>
 
-    
-
-    
   </Flex>
+
+   <Flex>
+    <ContentCenter>
+        <h2>With a touch of flash</h2>
+        <p>Micro animations, user feedback, page transitions, images and effects...
+        the little things that make your site look profesional when used in moderation.</p>
+        
+    </ContentCenter>
+    </Flex>
 
     <Flex>
   <SmallContent>
