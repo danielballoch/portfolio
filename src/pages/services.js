@@ -10,10 +10,11 @@ height: 80vh;
 const FlexMain = styled.div`
   margin: 3rem 2rem;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 1080;
+  min-height: 90vh;
 `
 const Content = styled.div`
   align-items: center;

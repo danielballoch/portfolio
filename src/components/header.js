@@ -11,7 +11,7 @@ const Container = styled.div`
   justify-content: center;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color:rgba(255,255,255, 0.95);
 `
 const Nav = styled.div`
 padding: .75em 1em;
@@ -36,6 +36,8 @@ const activeClassName = 'nav-item-active'
 
 const Header = () => (
     <Container>
+        {/* <p>Daniel Balloch</p>
+        <p>Web design & development</p> */}
         <StyledLink to="/" ><Nav>Work</Nav></StyledLink>
         <StyledLink to="/about/" ><Nav>About</Nav></StyledLink>
         <StyledLink to="/services/"><Nav>Services</Nav></StyledLink>

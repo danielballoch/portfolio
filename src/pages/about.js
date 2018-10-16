@@ -7,25 +7,28 @@ import Layout from '../components/layout'
 
 
 
-
 const FlexMain = styled.div`
-max-width: 900px;
+max-width: 1080px;
 display: flex;
 flex-direction: column;
 margin:auto;
 `
 const Flex = styled.div`
-margin: 2rem 1rem;
+margin: 3rem 1rem;
 display: flex;
 flex-wrap: wrap;
+// justify-content: space-around;
+background-color:rgba(255,255,255, 0.95);
+// border-radius: 25%;
 `
 
 const Content = styled.div`
   align-items: center;
   max-width: 900px;
-  margin: 0 auto 12px auto;
+  margin: 0 auto;
   padding: 10px;
 `
+
 
 
 export default (props) => (
@@ -47,11 +50,12 @@ export default (props) => (
             <p>An interest in tech and business lead me to picking up my former web development learning from highschool.</p>
             <p>
             This meant brushing up html, css, java and my design principles.
-            I then discovered the backend, learnt and used the MEANstack, before realiseing JAMstack would be the way to go for most clients needs. </p>
-            <p>In Short:
+            I then discovered the backend, learnt and used the MEANstack, before realising JAMstack would be the way to go for most clients needs. </p>
+            <h2>In Short:</h2>
+            <p>
             <ul>
             <li>html, css, java</li>
-            <li>JAMstack Focus
+            <li>JAMstack Focus (JavaScript, reusable APIs, and prebuilt Markup.)
                     <ul>
                         <li>Static Site Generators (gatsby, Next -may learn Hugo & Jekyll etc)</li>
                         <li>APIs (forms, eccomerce, blog etc)</li>

@@ -8,13 +8,6 @@ import Header from '../components/header'
 
 
 
-const HeroWrapper = styled.div`
-margin-top: 3em;
-display: flex;
-height: 40vh;
-align-items: center;
-
-`
 
 const FlexMain = styled.div`
 max-width: 1080px;
@@ -27,6 +20,12 @@ margin: 3rem 1rem;
 display: flex;
 flex-wrap: wrap;
 // justify-content: space-around;
+background-color:rgba(255,255,255, 0.95);
+// border-radius: 25%;
+@media (min-width: 1080px) {
+    padding: 3em; 
+}
+
 `
 
 const Content = styled.div`
@@ -50,24 +49,83 @@ const ContentCenter = styled.div`
 `
 
 
+const HeroWrapper = styled.div`
+
+left 0;
+margin: 3em 0 0 0;
+height: 75vh;
+align-items: center;
+object-fit: cover;
+overflow: visable;
+
+`
+const HeroText = styled.div`
+text-align: center;
+margin: 20vh auto;
+
+`
+const HeroHead = styled.h1`
+font-size: 9vh;
+line-height: 1;
+padding: 0;
+margin: 0;
+`
+const HeroSub = styled.h1`
+font-size: 5vh;
+line-height: 1;
+padding: 0;
+margin: 0;
+`
+
+const StyledImage = styled(Img)`
+    margin: 3em 0 0 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    transition: none 0s ease 0s;
+    z-index: -1;
+    overflow: visable;
+    
+    
+    -webkit-filter: opacity(60%);filter: opacity(60%);
+
+
+   
+  
+    
+    
+`
+
+
+
 
 
 export default (props) => (
     <Layout>
-        
+   <FlexMain>    
     <HeroWrapper>
-        
-    {/* <Img  fluid={props.data.background.childImageSharp.fluid} /> */}
-        <ContentCenter>
-            <h1>Daniel Balloch</h1>
-            <h4>Creating custom websites that work everywhere.</h4>
-        </ContentCenter>
-        
-        
+        <HeroText>
+            <HeroHead>Daniel Balloch</HeroHead>
+            <HeroSub>Web Design & Development </HeroSub>
+        </HeroText>
+    <StyledImage  fluid={props.data.background.childImageSharp.fluid}   style={{position: "absolute"}}/> 
     </HeroWrapper> 
-   <FlexMain>
+    
+    
    
-    <Flex>
+    {/* <Flex>
+    <ContentCenter>
+        <h1>Daniel Balloch - Web Developer</h1>
+        <p>Fast, responsive, secure, SEO and user friendly static websites.</p>
+    </ContentCenter>
+    
+    </Flex> */}
+    
     {/* Fast, responsive, secure, SEO and user friendly */}
     
     {/* <Content>
@@ -76,7 +134,7 @@ export default (props) => (
         
     </Content> */}
     
-    
+    <Flex>
     <SmallContent>
         <h1>Aim</h1>
         <p>Help businesses and people grow customer connection, profit and reputation using online presence.</p>
@@ -124,7 +182,7 @@ export default (props) => (
     </SmallContent>
     <SmallContent>
         <h2>Fast load times</h2>
-        <p>optimized images, pre compiled static site, preload other pages etc = faster load time which means retained traffic and higher seo scores</p>
+        <p>optimized images, pre compiled static site, preload other pages etc means faster load time which means retained traffic and higher seo scores.</p>
     </SmallContent>
     <SmallContent>
         <h2>User Experience</h2>
@@ -171,9 +229,9 @@ export default (props) => (
 
 export const pageQuery = graphql`
 query {
-    background: file(relativePath: { eq: "bg.png" }) {
+    background: file(relativePath: { eq: "bg.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1920) {
+        fluid(maxWidth: 2016) {
           ...GatsbyImageSharpFluid
         }
       }

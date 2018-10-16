@@ -3,15 +3,18 @@ import { Link, graphql } from 'gatsby'
 import styled from "styled-components"
 import Layout from '../components/layout'
 
-const HeroWrapper = styled.div`
-height: 80vh;
-`
+
 
 const FlexMain = styled.div`
   margin: 3rem 2rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1080;
+  min-height: 90vh;
 `
+
 const Content = styled.div`
   align-items: center;
   min-width: 300px;
