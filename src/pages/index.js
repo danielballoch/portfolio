@@ -5,6 +5,7 @@ import styled from "styled-components"
 
 import Layout from '../components/layout'
 import Header from '../components/header'
+import bg2 from '../images/fresh_snow.png'
 
 
 
@@ -19,8 +20,10 @@ const Flex = styled.div`
 margin: 3rem 1rem;
 display: flex;
 flex-wrap: wrap;
+align-items: flex-start;
 // justify-content: space-around;
 background-color:rgba(255,255,255, 0.95);
+background-image: url("$(bg2)");
 // border-radius: 25%;
 @media (min-width: 1080px) {
     padding: 3em; 
@@ -35,10 +38,10 @@ const Content = styled.div`
   padding: 10px;
 `
 const SmallContent = styled.div`
-  align-items: center;
   max-width: 300px;
   margin: auto;
   padding: 10px;
+  align-self: flex-start;
 `
 const ContentCenter = styled.div`
   align-items: center;
@@ -106,8 +109,8 @@ const StyledImage = styled(Img)`
 
 
 export default (props) => (
-    <Layout>
-   <FlexMain>    
+    <Layout >
+   <FlexMain >    
     <HeroWrapper>
         <HeroText>
             <HeroHead>Daniel Balloch</HeroHead>
@@ -178,7 +181,7 @@ export default (props) => (
     <Flex>
     <SmallContent>
         <h2>Responsive Design</h2>
-        <p>Websites designed with all users in mind. Taking advantage of css grid, flexbox, javascript etc to optimize content and navigation.</p>
+        <p>Websites designed with all users and devices in mind. Taking advantage of css grid, flexbox, javascript etc to optimize content and navigation.</p>
     </SmallContent>
     <SmallContent>
         <h2>Fast load times</h2>
@@ -195,7 +198,7 @@ export default (props) => (
     </SmallContent>
     <SmallContent>
         <h2>SEO</h2>
-        <p>search engine optimization implemented - load time optimization as well as keywords in metadata, footer etc to increase google site ranking.</p>
+        <p>Search engine optimization implemented. This means load time optimization as well as relavant content/keywords in metadata, footer etc to increase google site ranking.</p>
     </SmallContent>
     <SmallContent>
         <h2>Easy Editing</h2>
@@ -205,18 +208,18 @@ export default (props) => (
   </Flex>
 
    <Flex>
-    <ContentCenter>
+   {/* <img src={bg2}/> */}
+    <ContentCenter >
         <h2>With a touch of flash</h2>
-        <p>Micro animations, user feedback, page transitions, images and effects...
-        the little things that make your site look profesional when used in moderation.</p>
-        
+        <p>Micro animations, user feedback, page transitions, images and effects...<br/>
+        The little things that make your site look profesional when used in moderation.</p>
     </ContentCenter>
     </Flex>
 
     <Flex>
   <SmallContent>
         <h1>Sounds good?</h1>
-        <p>See <Link to="/contact">contact page</Link> for my details.</p>
+        <p>See <Link to="/contact">contact page</Link> for more details.</p>
         
     </SmallContent>
   </Flex>
