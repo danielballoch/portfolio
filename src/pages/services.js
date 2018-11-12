@@ -31,20 +31,20 @@ export default () => (
     <Content> 
         <h1>Static website creation</h1>
         
-        <p>Full blown websites. Eccomerce, blogs, portfolios with all the bells and whistles.</p>
+        <p>Full blown websites. Eccomerce, blogs, portfolios with all the bells and whistles. <br/> <a href="#"> See portfolio.</a></p>
         <hr/>
     </Content>
     
     <Content>
         <h1>Hosting and deployment</h1>
         
-        <p>I can get everything up and running for you or help along the way. Domain name accusition, site hosting etc. </p>
+        <p>I can get everything up and running for you or help along the way. Domain name accusition, site hosting etc. <br/> <a href="#"> Learn more.</a></p>
         <hr/>
     </Content>
     <Content>
         <h1>CMS Integration</h1>
         
-        <p>Configure a Content Managment System so you can easily make small changes without having to hire someone else or delve into the code</p>
+        <p>Configure a Content Managment System so you can easily make small changes without having to hire someone else or delve into the code. <br/> <a href="#"> Learn more.</a></p>
         <hr/>
     </Content>
   </FlexMain>

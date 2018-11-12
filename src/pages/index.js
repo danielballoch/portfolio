@@ -54,17 +54,22 @@ const ContentCenter = styled.div`
 
 const HeroWrapper = styled.div`
 
-left 0;
+left: 0;
 margin: 3em 0 0 0;
 height: 75vh;
 align-items: center;
 object-fit: cover;
 overflow: visable;
-
+@media (max-width: 505px) {
+    height: 40vh;
+}
 `
 const HeroText = styled.div`
 text-align: center;
 margin: 20vh auto;
+@media (max-width: 505px) {
+    margin: 10vh auto;
+}
 
 `
 const HeroHead = styled.h1`
@@ -96,12 +101,11 @@ const StyledImage = styled(Img)`
     
     
     -webkit-filter: opacity(60%);filter: opacity(60%);
+    @media (max-width: 505px) {
+    height: 60vh;
+}
 
-
-   
-  
-    
-    
+ 
 `
 
 
@@ -185,7 +189,7 @@ export default (props) => (
     </SmallContent>
     <SmallContent>
         <h2>Fast load times</h2>
-        <p>optimized images, pre compiled static site, preload other pages etc means faster load time which means retained traffic and higher seo scores.</p>
+        <p>Optimized images, pre compiled static site, preload other pages etc means faster load time which means retained traffic and higher seo scores.</p>
     </SmallContent>
     <SmallContent>
         <h2>User Experience</h2>

@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import Toolbar from './toolbar'
+import SideDrawer from './SideDrawer/SideDrawer'
+import Backdrop from './Backdrop/Backdrop'
 import Header from './header'
 import Footer from './footer'
 import './layout.css'
 
 const Layout = ({ children }) => (
+   
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -29,7 +33,11 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header/>
+
+          <Toolbar/>
+          <SideDrawer/>
+          <Backdrop/>
+        {/* <Header/> */}
         <div>
           {children}
         </div>
@@ -43,4 +51,30 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
+
+
+
 export default Layout
+
+
+
+
+
+
+
+
+
+
+
+
+// class App extends Component {
+//     state = {
+//         sideDrawerOpen = false 
+//     };
+    
+//     drawerToggleClickHandler = () => {
+//      this.setState();
+//     };
+
+
+// ;}
