@@ -60,17 +60,17 @@ height: 75vh;
 align-items: center;
 object-fit: cover;
 overflow: visable;
-@media (max-width: 505px) {
+@media (max-width: 555px) {
     height: 40vh;
 }
 `
 const HeroText = styled.div`
 text-align: center;
 margin: 20vh auto;
-@media (max-width: 505px) {
-    margin: 10vh auto;
+@media (max-width: 555px) {
+    margin: 9vh 12%;
 }
-
+transition: 0.2s;
 `
 const HeroHead = styled.h1`
 font-size: 9vh;
@@ -101,7 +101,7 @@ const StyledImage = styled(Img)`
     
     
     -webkit-filter: opacity(60%);filter: opacity(60%);
-    @media (max-width: 505px) {
+    @media (max-width: 555px) {
     height: 60vh;
 }
 

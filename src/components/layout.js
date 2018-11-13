@@ -10,22 +10,82 @@ import Header from './header'
 import Footer from './footer'
 import './layout.css'
 
-const Layout = ({ children }) => (
+// const Layout = ({ children }) => (
    
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
+//   <StaticQuery
+//     query={graphql`
+//       query SiteTitleQuery {
+//         site {
+//           siteMetadata {
+//             title
+//           }
+//         }
+//       }
+//     `}
+//     render={data => (
+//       <>
+//         <Helmet
+//           title={data.site.siteMetadata.title}
+//           meta={[
+//             { name: 'description', content: 'Sample' },
+//             { name: 'keywords', content: 'sample, something' },
+//           ]}
+//         >
+//           <html lang="en" />
+//         </Helmet>
+
+//           <Toolbar/>
+//           <SideDrawer/>
+//           <Backdrop/>
+//         {/* <Header/> */}
+//         <div>
+//           {children}
+//         </div>
+//         <Footer/>
+//       </>
+//     )}
+//   />
+// )
+
+// Layout.propTypes = {
+//   children: PropTypes.node.isRequired,
+// }
+
+
+
+
+// export default Layout
+
+
+
+
+export default class Layout extends React.Component {
+    state = {
+        sideDrawerOpen: false 
+    };
+    
+    drawerToggleClickHandler = () => {
+     this.setState((prevState)=> {
+         return{sideDrawerOpen: !prevState.sideDrawerOpen};
+     });
+    };
+
+    backdropClickHandler = () => {
+        this.setState({sideDrawerOpen: false});
+    };
+
+    render() {
+      const { children } = this.props;
+      
+      let backdrop;
+
+      if(this.state.sideDrawerOpen){
+          backdrop = <Backdrop click={this.backdropClickHandler}/>;
       }
-    `}
-    render={data => (
-      <>
+      return (
+        <>
         <Helmet
-          title={data.site.siteMetadata.title}
+          title={this.props.title}
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
@@ -33,28 +93,21 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-
-          <Toolbar/>
-          <SideDrawer/>
-          <Backdrop/>
-        {/* <Header/> */}
-        <div>
-          {children}
-        </div>
+        
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
+        <SideDrawer show={this.state.sideDrawerOpen}/>
+        {backdrop}
+        
+          <div>
+            
+            {children}
+          </div>
         <Footer/>
-      </>
-    )}
-  />
-)
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-
-
-
-export default Layout
+        
+          </>
+      );
+    }
+  }
 
 
 
@@ -67,14 +120,7 @@ export default Layout
 
 
 
-// class App extends Component {
-//     state = {
-//         sideDrawerOpen = false 
-//     };
     
-//     drawerToggleClickHandler = () => {
-//      this.setState();
-//     };
 
 
-// ;}
+
