@@ -6,6 +6,7 @@ import styled from "styled-components"
 import Layout from '../components/layout'
 import Header from '../components/header'
 import bg2 from '../images/fresh_snow.png'
+import bg3 from '../images/water.gif'
 
 
 
@@ -15,6 +16,7 @@ max-width: 1080px;
 display: flex;
 flex-direction: column;
 margin:auto;
+
 `
 const Flex = styled.div`
 margin: 3rem 1rem;
@@ -28,7 +30,8 @@ background-image: url("$(bg2)");
 @media (min-width: 1080px) {
     padding: 3em; 
 }
-
+background-image: url(${bg2});
+background-attachment: fixed;
 `
 
 const Content = styled.div`
@@ -36,12 +39,14 @@ const Content = styled.div`
   max-width: 900px;
   margin: 0 auto;
   padding: 10px;
+  
 `
 const SmallContent = styled.div`
   max-width: 300px;
   margin: auto;
   padding: 10px;
   align-self: flex-start;
+  
 `
 const ContentCenter = styled.div`
   align-items: center;
@@ -212,8 +217,8 @@ export default (props) => (
   </Flex>
 
    <Flex>
-   {/* <img src={bg2}/> */}
-    <ContentCenter >
+   
+    <ContentCenter>
         <h2>With a touch of flash</h2>
         <p>Micro animations, user feedback, page transitions, images and effects...<br/>
         The little things that make your site look profesional when used in moderation.</p>

@@ -29,14 +29,14 @@ export default () => (
  <Layout>
     <FlexMain>
     <Content> 
-        <h1>Static website creation</h1>
+        <h1>Website Design & Development</h1>
         
         <p>Full blown websites. Eccomerce, blogs, portfolios with all the bells and whistles. <br/> <a href="#"> See portfolio.</a></p>
         <hr/>
     </Content>
     
     <Content>
-        <h1>Hosting and deployment</h1>
+        <h1>Hosting & deployment</h1>
         
         <p>I can get everything up and running for you or help along the way. Domain name accusition, site hosting etc. <br/> <a href="#"> Learn more.</a></p>
         <hr/>
