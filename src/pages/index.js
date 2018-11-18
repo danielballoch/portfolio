@@ -7,115 +7,7 @@ import Layout from '../components/layout'
 import Header from '../components/header'
 import bg2 from '../images/fresh_snow.png'
 import bg3 from '../images/water.gif'
-
-
-
-
-const FlexMain = styled.div`
-max-width: 1080px;
-display: flex;
-flex-direction: column;
-margin:auto;
-
-`
-const Flex = styled.div`
-margin: 3rem 1rem;
-display: flex;
-flex-wrap: wrap;
-align-items: flex-start;
-// justify-content: space-around;
-background-color:rgba(255,255,255, 0.95);
-background-image: url("$(bg2)");
-// border-radius: 25%;
-@media (min-width: 1080px) {
-    padding: 3em; 
-}
-background-image: url(${bg2});
-background-attachment: fixed;
-`
-
-const Content = styled.div`
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 10px;
-  
-`
-const SmallContent = styled.div`
-  max-width: 300px;
-  margin: auto;
-  padding: 10px;
-  align-self: flex-start;
-  
-`
-const ContentCenter = styled.div`
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto 12px auto;
- text-align: center;
- padding: 10px;
-`
-
-
-const HeroWrapper = styled.div`
-
-left: 0;
-margin: 3em 0 0 0;
-height: 75vh;
-align-items: center;
-object-fit: cover;
-overflow: visable;
-@media (max-width: 555px) {
-    height: 40vh;
-}
-`
-const HeroText = styled.div`
-text-align: center;
-margin: 20vh auto;
-@media (max-width: 555px) {
-    margin: 9vh 12%;
-}
-transition: 0.2s;
-`
-const HeroHead = styled.h1`
-font-size: 9vh;
-line-height: 1;
-padding: 0;
-margin: 0;
-`
-const HeroSub = styled.h1`
-font-size: 5vh;
-line-height: 1;
-padding: 0;
-margin: 0;
-`
-
-const StyledImage = styled(Img)`
-    margin: 3em 0 0 0;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    opacity: 1;
-    transition: none 0s ease 0s;
-    z-index: -1;
-    overflow: visable;
-    
-    
-    -webkit-filter: opacity(60%);filter: opacity(60%);
-    @media (max-width: 555px) {
-    height: 60vh;
-}
-
- 
-`
-
-
-
-
+import {FlexMain, Flex, FlexParallax, SmallContent, ContentCenter, HeroWrapper, HeroText, HeroHead, HeroSub, StyledImage} from '../components/style.js';
 
 export default (props) => (
     <Layout >
@@ -130,21 +22,6 @@ export default (props) => (
     
     
    
-    {/* <Flex>
-    <ContentCenter>
-        <h1>Daniel Balloch - Web Developer</h1>
-        <p>Fast, responsive, secure, SEO and user friendly static websites.</p>
-    </ContentCenter>
-    
-    </Flex> */}
-    
-    {/* Fast, responsive, secure, SEO and user friendly */}
-    
-    {/* <Content>
-        <h1>Latest project</h1>
-        <p>*currently looking for work.*Explain goals and how I met them.</p>
-        
-    </Content> */}
     
     <Flex>
     <SmallContent>
@@ -179,13 +56,15 @@ export default (props) => (
     </ContentCenter>
     </Flex> */}
 
-    <Flex>
+</FlexMain>
+    <FlexParallax>
     <ContentCenter>
         <h2>All The Bells And Whistles</h2>
         {/* <p>*grid explaining seo, website load time, responsive design, </p>
         <p>stats or blog to show this?</p> */}
     </ContentCenter>
-    </Flex>
+    </FlexParallax>
+<FlexMain>
 
     <Flex>
     <SmallContent>
@@ -215,17 +94,18 @@ export default (props) => (
     </SmallContent>
 
   </Flex>
-
-   <Flex>
+  </FlexMain>
+   <FlexParallax>
    
     <ContentCenter>
         <h2>With a touch of flash</h2>
         <p>Micro animations, user feedback, page transitions, images and effects...<br/>
-        The little things that make your site look profesional when used in moderation.</p>
+        The little things that make your site look professional when used in moderation.</p>
     </ContentCenter>
-    </Flex>
-
+    </FlexParallax>
+    <FlexMain>
     <Flex>
+    
   <SmallContent>
         <h1>Sounds good?</h1>
         <p>See <Link to="/contact">contact page</Link> for more details.</p>

@@ -3,8 +3,10 @@
     top: 0;
     left: 0;
     width: 100%;
+    
     background-color:rgba(255,255,255, 0.95);
     height: 56px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
 .toolbar_navigation {
@@ -12,6 +14,8 @@
     height: 100%;
     align-items: center;
     padding: 0 1rem;
+    margin: auto;
+    max-width: 1038px;
 }
 
 .toolbar_logo {

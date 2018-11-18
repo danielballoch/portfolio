@@ -2,24 +2,12 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled from "styled-components"
 import Layout from '../components/layout'
+import {FlexMain2, Content} from '../components/style'
 
 
 
-const FlexMain = styled.div`
-  margin: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1080;
-  min-height: 90vh;
-`
 
-const Content = styled.div`
-  align-items: center;
-  min-width: 300px;
-  margin: 0 auto 12px auto;
-`
+
 const TextInput = styled.input`
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
@@ -29,7 +17,6 @@ const TextInput = styled.input`
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     
-}
 `
 const TextArea = styled.textarea`
 width: 100%; /* Full width */
@@ -62,7 +49,7 @@ const Label = styled.label`
 
 export default () => (
  <Layout>
-    <FlexMain>
+    <FlexMain2>
     <Content>
         <h1>Interested in hiring me?</h1>
         <h3>Talk to me at:</h3>
@@ -90,6 +77,6 @@ export default () => (
     </Content>
    
     
-  </FlexMain>
+  </FlexMain2>
   </Layout>
 )
