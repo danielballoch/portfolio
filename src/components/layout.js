@@ -8,55 +8,7 @@ import SideDrawer from './SideDrawer/SideDrawer'
 import Backdrop from './Backdrop/Backdrop'
 import Footer from './footer'
 import './layout.css'
-
-// const Layout = ({ children }) => (
-   
-//   <StaticQuery
-//     query={graphql`
-//       query SiteTitleQuery {
-//         site {
-//           siteMetadata {
-//             title
-//           }
-//         }
-//       }
-//     `}
-//     render={data => (
-//       <>
-//         <Helmet
-//           title={data.site.siteMetadata.title}
-//           meta={[
-//             { name: 'description', content: 'Sample' },
-//             { name: 'keywords', content: 'sample, something' },
-//           ]}
-//         >
-//           <html lang="en" />
-//         </Helmet>
-
-//           <Toolbar/>
-//           <SideDrawer/>
-//           <Backdrop/>
-//         {/* <Header/> */}
-//         <div>
-//           {children}
-//         </div>
-//         <Footer/>
-//       </>
-//     )}
-//   />
-// )
-
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
-
-
-
-
-// export default Layout
-
-
-
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 export default class Layout extends React.Component {
     state = {
@@ -96,13 +48,13 @@ export default class Layout extends React.Component {
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
-        
+        <PageTransition>
           <div>
             
             {children}
           </div>
         <Footer/>
-        
+        </PageTransition>
           </>
       );
     }

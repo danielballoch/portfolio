@@ -60,7 +60,6 @@ export default (props) => (
                  (confused? dont worry, I'll let you know and send you in the right direction). </p>
         </Content>
     </Flex>
-    
     </FlexMain>
     </Layout>
 )

@@ -7,7 +7,6 @@ import {FlexMain2, Content} from '../components/style'
 
 
 
-
 const TextInput = styled.input`
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 

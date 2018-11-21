@@ -7,7 +7,9 @@ import Layout from '../components/layout'
 import bg2 from '../images/fresh_snow.png'
 import {FlexMain, Flex, FlexParallax, SmallContent, ContentCenter, HeroWrapper, HeroText, HeroHead, HeroSub, StyledImage} from '../components/style.js';
 
+
 export default (props) => (
+    
     <Layout >
    <FlexMain >    
     <HeroWrapper>
@@ -113,6 +115,7 @@ export default (props) => (
 
   </FlexMain>
     </Layout>
+    
 )
 
 
