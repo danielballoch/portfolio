@@ -4,9 +4,7 @@ import Img from 'gatsby-image'
 import styled from "styled-components"
 
 import Layout from '../components/layout'
-import Header from '../components/header'
 import bg2 from '../images/fresh_snow.png'
-import bg3 from '../images/water.gif'
 import {FlexMain, Flex, FlexParallax, SmallContent, ContentCenter, HeroWrapper, HeroText, HeroHead, HeroSub, StyledImage} from '../components/style.js';
 
 export default (props) => (

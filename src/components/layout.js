@@ -6,7 +6,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import Toolbar from './toolbar'
 import SideDrawer from './SideDrawer/SideDrawer'
 import Backdrop from './Backdrop/Backdrop'
-import Header from './header'
 import Footer from './footer'
 import './layout.css'
 

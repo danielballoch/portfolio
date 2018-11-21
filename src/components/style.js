@@ -7,7 +7,7 @@ export const FlexMain = styled.div`
 max-width: 1080px;
 display: flex;
 flex-direction: column;
-margin:auto;
+margin:56px auto;
 `
 export const FlexMain2 = styled.div`
   max-width: 1080px;
@@ -15,7 +15,8 @@ export const FlexMain2 = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3rem auto;
+  margin:56px auto;
+  padding: 0 1em;
   min-height: 90vh;
 `
 
@@ -49,6 +50,7 @@ export const Content = styled.div`
 `
 export const Content2 = styled(Content)`
 max-width: 600px;
+padding: 0 1em;
 `
 
 
@@ -71,8 +73,8 @@ export const ContentCenter = styled.div`
 export const HeroWrapper = styled.div`
 
 left: 0;
-margin: 3em 0 0 0;
-height: 75vh;
+margin: 0 0 0 0;
+height: 77vh;
 align-items: center;
 object-fit: cover;
 overflow: visable;
@@ -102,7 +104,7 @@ margin: 0;
 `
 
 export const StyledImage = styled(Img)`
-    margin: 3em 0 0 0;
+    margin: 56px 0 0 0;
     position: absolute;
     top: 0px;
     left: 0px;

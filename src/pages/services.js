@@ -30,7 +30,7 @@ export default () => (
         <h1>CMS Integration</h1>
         
         <p>Configure a Content Managment System so you can easily make small changes without having to hire someone else or delve into the code. <br/> <a href="#"> Learn more.</a></p>
-        <hr/>
+        
     </Content2>
   </FlexMain2>
   </Layout>
