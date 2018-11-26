@@ -8,7 +8,7 @@ import SideDrawer from './SideDrawer/SideDrawer'
 import Backdrop from './Backdrop/Backdrop'
 import Footer from './footer'
 import './layout.css'
-import PageTransition from 'gatsby-plugin-page-transitions';
+
 
 export default class Layout extends React.Component {
     state = {
@@ -48,13 +48,13 @@ export default class Layout extends React.Component {
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
-        <PageTransition>
-          <div>
+       
+          <div style={{minHeight: "100vh"}}>
             
             {children}
           </div>
         <Footer/>
-        </PageTransition>
+        
           </>
       );
     }
