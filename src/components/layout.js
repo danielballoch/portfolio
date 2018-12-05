@@ -2,12 +2,17 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import PageTransition from 'gatsby-v2-plugin-page-transitions';
+
 
 import Toolbar from './toolbar'
 import SideDrawer from './SideDrawer/SideDrawer'
 import Backdrop from './Backdrop/Backdrop'
 import Footer from './footer'
 import './layout.css'
+
+
+
 
 
 export default class Layout extends React.Component {
@@ -24,6 +29,11 @@ export default class Layout extends React.Component {
     backdropClickHandler = () => {
         this.setState({sideDrawerOpen: false});
     };
+
+   
+
+
+
 
     render() {
       const { children } = this.props;
@@ -48,11 +58,12 @@ export default class Layout extends React.Component {
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
-       
-          <div style={{minHeight: "100vh"}}>
-            
+          <PageTransition>
+          <div id="wrapper">
             {children}
           </div>
+          </PageTransition>
+          
         <Footer/>
         
           </>
