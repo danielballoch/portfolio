@@ -29,6 +29,11 @@ export default (props) => (
             <h1>Design & Development</h1>
             <p>Being a designer over artist, means keeping the user in mind. The focus is on ease of use, consistency and responsiveness.
                 I find this breeds a clean base design and the little bits of flash we add stand out a lot more as a result. </p>
+                
+            <p>Content selection plays a big part in the success of a website. What you say and how you say it, text, color, images etc.
+                I'm handy with editing tools and know some photographers and I'd be interested to learn about your business so we can workout
+                 the pages, script, images etc together
+                 (if you don't already have this figured out) .  </p>
             
             <p>Along with this, all websites are audited and optimized for speed and search engine ranking before I hand them over,
                  so you can rest assured your getting a efficent, accessible and fast site. </p>

@@ -47,7 +47,7 @@ box-shadow: none;
 export const Content = styled.div`
   align-items: center;
   min-width: 300px;
-  margin: 0 auto 12px auto;
+  margin: 0 auto 2em auto;
 `
 export const Content2 = styled(Content)`
 max-width: 600px;
@@ -69,6 +69,7 @@ export const ContentCenter = styled.div`
  text-align: center;
  padding: 10px;
 `
+
 
 
 export const HeroWrapper = styled.div`

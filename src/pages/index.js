@@ -99,21 +99,41 @@ export default (props) => (
    
     <ContentCenter>
         <h2>With a touch of flash</h2>
-        <p>Micro animations, user feedback, page transitions, images and effects...<br/>
-        The little things that make your site look professional when used in moderation.</p>
+        
     </ContentCenter>
     </FlexParallax>
+
     <FlexMain>
     <Flex>
-    
-  <SmallContent>
-        <h1>Sounds good?</h1>
+        <ContentCenter><h3>"The little things that make a professional site when used in moderation."</h3></ContentCenter>
+
+        <SmallContent>
+            <h2>Content selection</h2>
+            <p>Pages, headings, scripts, images... content is the most important thing. You know your business,
+                 but I may be able to make some suggestions to make content more web friendly.</p>
+        </SmallContent>
+        <SmallContent>
+            <h2>Micro Animations</h2>
+            <p>Small animations to make UI easy and natural. Fancy an animated menu toggle button for mobile,
+                 text that pops into the screen or a updating password strength bar, I can handle that. </p>
+        </SmallContent>
+        <SmallContent>
+            <h2>Page Transitions</h2>
+            <p>Animation goes with navigation. Going from services to contact, page to page, in a unique way is a chance to stand out while also giving content a chance to load.    </p>
+        </SmallContent>
+    </Flex>
+  </FlexMain>
+
+  <Flex>
+      <ContentCenter>
+      <h1>Contact: 022 078 0868</h1>
+      <h1>Email: danielkingballoch@gmail.com</h1>
         <p>See <Link to="/contact">contact page</Link> for more details.</p>
-        
-    </SmallContent>
+      </ContentCenter>
+
   </Flex>
 
-  </FlexMain>
+  
     </Layout>
     
 )

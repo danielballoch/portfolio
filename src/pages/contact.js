@@ -51,14 +51,15 @@ export default () => (
     <FlexMain2>
     <Content>
         <h1>Interested in hiring me?</h1>
-        <h3>Talk to me at:</h3>
+        <h3>Contact below to arrange a meeting or get a project quote:</h3>
         <a href="mailto:danielpbdesign@gmail.com" rel="nofollow">Email: danielpbdesign@gmail.com</a>
         <br/>
         <a href="tel:022-078-0868">Phone: (+64) 022 078 0868</a>
-        <p>or leave a message.</p>
+        
     </Content>
     
     <Content>
+    <hr/>
         <h3>Contact Form</h3>
         <form>
 
