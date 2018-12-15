@@ -9,6 +9,7 @@
     cursor: pointer;
     padding: 0;
     box-sizing: border-box;
+    z-index: 300;
 }
 
 .toggle-button:focus {
@@ -19,4 +20,30 @@
    width: 26px;
    height: 2px;
    background: black; 
+   z-index: 300;
 }
+
+#toggle-button__close :nth-child(1) {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#toggle-button__close :nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  #toggle-button__close :nth-child(3) {
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  #open {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
