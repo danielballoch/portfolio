@@ -10,13 +10,9 @@ flex-direction: column;
 margin:56px auto;
 
 `
-export const FlexMain2 = styled.div`
-  max-width: 1080px;
-  display: flex;
-  flex-direction: column;
+export const FlexMain2 = styled(FlexMain)`
   align-items: center;
   justify-content: center;
-  margin:56px auto;
   padding: 0 1em;
   min-height: 90vh;
 `

@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 import Layout from '../components/layout'
 import bg2 from '../images/fresh_snow.png'
-import {FlexMain, Flex, FlexParallax, SmallContent, ContentCenter, HeroWrapper, HeroText, HeroHead, HeroSub, StyledImage} from '../components/style.js';
+import {FlexMain, Flex, FlexParallax, SmallContent, ContentCenter, HeroWrapper, HeroText, HeroHead, HeroSub, StyledImage, FlexMain2} from '../components/style.js';
 
 
 export default (props) => (
@@ -73,16 +73,16 @@ export default (props) => (
     </SmallContent>
     <SmallContent>
         <h2>Fast load times</h2>
-        <p>Optimized images, pre compiled static site, preload other pages etc means faster load time which means retained traffic and higher seo scores.</p>
+        <p>Optimized images, pre compiled static site, lazy-load images etc. The resulting faster load time should mean retained traffic and higher seo scores.</p>
     </SmallContent>
     <SmallContent>
         <h2>User Experience</h2>
-        <p>Site layout which is easiy to navigate and makes sense for customers. Importent content prioritized, customer drawn in, familiar navigation etc etc.</p>
+        <p>Site layouts which are easy to navigate and make sense to users. Importent content prioritized, customers drawn in, familiar navigation etc.</p>
     </SmallContent>
     <SmallContent>
         <h2>High Security</h2>
-        <p>With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced.
-        You can also leverage the domain expertise of specialist third-party services.</p>
+        <p>For eccomerce or websites with sensitive information on the server-side I leverage specialist third party services. 
+             This means surface areas for attacks are reduced, keeping you and your customers safe.</p>
     </SmallContent>
     <SmallContent>
         <h2>SEO</h2>
@@ -90,7 +90,7 @@ export default (props) => (
     </SmallContent>
     <SmallContent>
         <h2>Easy Editing</h2>
-        <p>CMS integration with instant builds to eliminate wasted time and money. If implemented with your product you can change or add any piece of content to an existing layout.</p>
+        <p>CMS integration with instant builds to eliminate wasted time and money. If included with your website you can change or add any piece of content to an existing layout.</p>
     </SmallContent>
 
   </Flex>
@@ -115,24 +115,25 @@ export default (props) => (
         <SmallContent>
             <h2>Micro Animations</h2>
             <p>Small animations to make UI easy and natural. Fancy an animated menu toggle button for mobile,
-                 text that pops into the screen or a updating password strength bar, I can handle that. </p>
+                 text that pops into the screen or an updating password strength bar, I can handle that. </p>
         </SmallContent>
         <SmallContent>
             <h2>Page Transitions</h2>
-            <p>Animation goes with navigation. Going from services to contact, page to page, in a unique way is a chance to stand out while also giving content a chance to load.    </p>
+            <p>Animation goes with navigation. Going from services to contact, page to page, in a unique way is a chance to stand out while also giving content a chance to load while users are distracted.    </p>
         </SmallContent>
     </Flex>
   </FlexMain>
 
-  <Flex>
-      <ContentCenter>
-      <h1>Contact: 022 078 0868</h1>
-      <h1>Email: danielkingballoch@gmail.com</h1>
-        <p>See <Link to="/contact">contact page</Link> for more details.</p>
-      </ContentCenter>
 
-  </Flex>
-
+  <FlexMain2>   
+            <h2>Lets start your project</h2>
+            <h1>Phone: </h1>
+            <h2>022 078 0868</h2>
+            <h1>Email:</h1>
+            <h3> danielkingballoch@gmail.com</h3>
+            <p>See <Link to="/contact">contact page</Link> for more details.</p>
+  </FlexMain2>
+  
   
     </Layout>
     

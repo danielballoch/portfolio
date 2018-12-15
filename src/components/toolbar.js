@@ -1,6 +1,7 @@
 import React from  'react';
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import styled from "styled-components"
+import Img from 'gatsby-image'
 
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton'
 import './toolbar.css';
@@ -32,3 +33,4 @@ const toolbar = props => (
 );
 
 export default toolbar;
+
