@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     z-index: 300;
+    
 }
 
 .toggle-button:focus {
@@ -21,29 +22,30 @@
    height: 2px;
    background: black; 
    z-index: 300;
+   transition: 0.5s;
 }
 
-#toggle-button__close :nth-child(1) {
+.toggle :nth-of-type(1) {
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -o-transform: rotate(135deg);
     transform: rotate(135deg);
+    
+    transform: translateY(8px) rotate(135deg); 
 }
 
-#toggle-button__close :nth-child(2) {
+.toggle :nth-of-type(2) {
     opacity: 0;
-    left: -60px;
+    transform: translateX(-42px) ; 
+    
   }
   
-  #toggle-button__close :nth-child(3) {
+  .toggle :nth-of-type(3) {
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
+    transform: translateY(-8px) rotate(-135deg) ; 
+  
   }
-  #open {
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg);
-  }
+

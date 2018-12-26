@@ -5,17 +5,22 @@ import Img from 'gatsby-image'
 
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton'
 import './toolbar.css';
-import drawerToggleButton from './SideDrawer/DrawerToggleButton';
 import {StyledLink, Nav} from './NavigationLinks';
 
 
 
 
-const toolbar = props => (
+const toolbar = props => {
+    // let toolbarButtonClasses = 'toolbar__toggle-button';
+    // if(props.open){
+    //     toolbarButtonClasses = 'toolbar__toggle-button open';
+    // }
+
+return(
     <header className="toolbar">
         <nav className="toolbar_navigation">
-            <div className="toolbar__toggle-button">
-                <DrawerToggleButton click={props.drawerClickHandler}/>
+            <div className='toolbar_toggle-button'>
+                <DrawerToggleButton open={props.open} click={props.drawerClickHandler}/>
             </div>
             <div className="toolbar_logo"><StyledLink id="StyledLink" to="/" ><Nav>Daniel Balloch</Nav></StyledLink></div>
             <div className="spacer"></div>
@@ -31,6 +36,6 @@ const toolbar = props => (
         </nav>
     </header>
 );
-
+}
 export default toolbar;
 

@@ -15,6 +15,7 @@ import './layout.css'
 
 
 
+
 export default class Layout extends React.Component {
     state = {
         sideDrawerOpen: false 
@@ -55,7 +56,7 @@ export default class Layout extends React.Component {
           <html lang="en" />
         </Helmet>
         
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} open={this.state.sideDrawerOpen}/>
         <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
           <PageTransition>
