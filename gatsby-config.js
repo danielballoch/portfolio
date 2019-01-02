@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Daniel Balloch - Web developer',
+    siteUrl:'https://www.danielballoch.com',
   },
   plugins: [
     {
@@ -28,6 +29,8 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-v2-plugin-page-transitions',
+    'gatsby-plugin-sitemap',
+    
     
   ],
 }

@@ -11,15 +11,12 @@ import {StyledLink, Nav} from './NavigationLinks';
 
 
 const toolbar = props => {
-    // let toolbarButtonClasses = 'toolbar__toggle-button';
-    // if(props.open){
-    //     toolbarButtonClasses = 'toolbar__toggle-button open';
-    // }
+
 
 return(
     <header className="toolbar">
         <nav className="toolbar_navigation">
-            <div className='toolbar_toggle-button'>
+            <div className='toolbar__toggle-button'>
                 <DrawerToggleButton open={props.open} click={props.drawerClickHandler}/>
             </div>
             <div className="toolbar_logo"><StyledLink id="StyledLink" to="/" ><Nav>Daniel Balloch</Nav></StyledLink></div>
