@@ -5,11 +5,13 @@ import { StaticQuery, graphql } from 'gatsby'
 import PageTransition from 'gatsby-v2-plugin-page-transitions';
 
 
+
 import Toolbar from './toolbar'
 import SideDrawer from './SideDrawer/SideDrawer'
 import Backdrop from './Backdrop/Backdrop'
 import Footer from './footer'
 import './layout.css'
+import SEO from '../components/SEO'
 
 
 
@@ -46,15 +48,7 @@ export default class Layout extends React.Component {
       }
       return (
         <>
-        <Helmet
-          title={this.props.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
+        <SEO/>
         
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} open={this.state.sideDrawerOpen}/>
         <SideDrawer show={this.state.sideDrawerOpen}/>
