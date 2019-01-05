@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Daniel Balloch',
-    titleTemplate: ' · Web Developer',
+    title: 'Daniel Balloch - Web Developer',
+    titleTemplate: 'Daniel Balloch - Web Developer',
     description: 'Web design and development including eccomerce, blogs, marketing and business solutions. Affordable pricing and customer oriented attitude. Responsive mobile friendly products with CMS integrations and cutting edge hosting technologys. Contact Daniel Balloch, based in Hamilton New Zealand for a free website quote',
     siteUrl:'https://www.danbwebdesign.com',
     image: 'src/images/gatsby-icon.png',

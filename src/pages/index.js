@@ -4,7 +4,6 @@ import Img from 'gatsby-image'
 import styled from "styled-components"
 
 import Layout from '../components/layout'
-import bg2 from '../images/fresh_snow.png'
 import {FlexMain, Flex, FlexParallax, SmallContent, ContentCenter, HeroWrapper, HeroText, HeroHead, HeroSub, StyledImage, FlexMain2} from '../components/style.js';
 
 
@@ -17,7 +16,7 @@ export default (props) => (
             <HeroHead>Daniel Balloch</HeroHead>
             <HeroSub>Web Design & Development </HeroSub>
         </HeroText>
-    <StyledImage  fluid={props.data.background.childImageSharp.fluid}   style={{position: "absolute"}}/> 
+    <StyledImage  fluid={props.data.background.childImageSharp.fluid}   style={{position: "absolute"}} alt="Daniel Balloch hero image"/> 
     </HeroWrapper> 
     
     
