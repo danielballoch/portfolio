@@ -1,4 +1,6 @@
 .side-drawer {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background: white;
     box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
@@ -21,12 +23,12 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 2rem;
+    justify-content: top;
+    margin: auto;
 }
 
 .side-drawer li {
-    margin: 0.5rem 0;
+    margin: 0;
 }
 
 .side-drawer a {
@@ -41,7 +43,9 @@
 }
 
 #styled_img{
-    width: 200px;
+    
+    width: 70%;
+    margin: 4rem auto 1rem  auto;
 }
 
 @media (min-width: 556px) {

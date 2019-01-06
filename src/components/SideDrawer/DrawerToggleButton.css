@@ -1,4 +1,4 @@
-.toggle-button {
+.side-drawer-button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -13,11 +13,11 @@
     
 }
 
-.toggle-button:focus {
+.side-drawer-button:focus {
     outline: none;
 }
 
-.toggle-button__line {
+.side-drawer-button__line {
    width: 26px;
    height: 2px;
    background: black; 

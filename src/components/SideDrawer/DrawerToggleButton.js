@@ -2,16 +2,16 @@ import React from 'react';
 import './DrawerToggleButton.css';
 
 const drawerToggleButton = props => {
-    let toggleClasses = 'toggle-button';
+    let toggleClasses = 'side-drawer-button';
     if(props.open){
-        toggleClasses = 'toggle-button toggle'
+        toggleClasses = 'side-drawer-button toggle'
     }
 
 return(
     <button className={toggleClasses} onClick={props.click}>
-        <div className="toggle-button__line"/>
-        <div className="toggle-button__line"/>
-        <div className="toggle-button__line"/>
+        <div className="side-drawer-button__line"/>
+        <div className="side-drawer-button__line"/>
+        <div className="side-drawer-button__line"/>
     </button>
     );
 }
