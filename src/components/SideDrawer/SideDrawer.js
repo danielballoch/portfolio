@@ -14,8 +14,8 @@ const sideDrawer = props => {
        <ul>
             <img id="styled_img" src={profile} alt="profile image"/> 
             <StyledLink id="StyledLink" to="/" ><Nav>Work</Nav></StyledLink>
-            <StyledLink to="/about/" ><Nav>About</Nav></StyledLink>
-            <StyledLink to="/services/"><Nav>Services</Nav></StyledLink>
+            <StyledLink to="/about" ><Nav>About</Nav></StyledLink>
+            <StyledLink to="/services"><Nav>Services</Nav></StyledLink>
             <StyledLink to="/contact" ><Nav>Contact</Nav></StyledLink>
         </ul>
    </nav> 
