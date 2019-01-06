@@ -12,13 +12,13 @@ const sideDrawer = props => {
    <nav className={drawerClasses}> 
    
    <img id="styled_img" src={profile} alt="profile image"/> 
-       <ul>
-            
+       
+        <div>
             <StyledLink id="StyledLink" to="/" ><Nav>Work</Nav></StyledLink>
             <StyledLink to="/about" ><Nav>About</Nav></StyledLink>
             <StyledLink to="/services"><Nav>Services</Nav></StyledLink>
             <StyledLink to="/contact" ><Nav>Contact</Nav></StyledLink>
-        </ul>
+        </div>
    </nav> 
    );
 };

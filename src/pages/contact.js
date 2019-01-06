@@ -30,14 +30,16 @@ resize: vertical /* Allow the user to vertically resize the textarea (not horizo
 const SubmitInput = styled.button`
     font-size: 1.5em;
     font-family: "Helvetica Neue", Helvetica, "Segoe UI";
-    background-color: #FF4136;
+    /* background-color: #FF4136; */
+    background-color: #528bbc;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
     transition: 0.2s;
     &:hover {
-        background: #2a0800;
+        background-color: #36648b;
+        /* background: #2a0800; */
 `
 const Label = styled.label`
 

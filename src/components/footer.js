@@ -7,8 +7,9 @@ const Container = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #FF4136;
-    /* background-color:  #36648b; */
+    
+    /* background-color: #FF4136; */
+    background-color:  #284a66; 
     margin: 0;
     width:100%;
 `

@@ -18,7 +18,7 @@
     transform: translateX(0);
 }
 
-.side-drawer ul {
+.side-drawer div {
     height: 100%;
     list-style: none;
     display: flex;
@@ -39,7 +39,8 @@
 
 .side-drawer a:hover,
 .side-drawer a:active {
-   color: #fa923f; 
+   /* color: #fa923f;  */
+   color: #36648b;
 }
 
 #styled_img{

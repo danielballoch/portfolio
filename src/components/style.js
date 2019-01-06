@@ -28,7 +28,7 @@ align-items: flex-start;
 background-color:rgba(255,255,255, 0.95);
 background-image: url("$(bg2)");
 // border-radius: 25%;
-@media (min-width: 1080px) {
+@media (min-width: 630px) {
     padding: 3em; 
 }
 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
