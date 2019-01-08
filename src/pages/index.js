@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import {FlexMain, Flex, FlexParallax, SmallContent, ContentCenter, HeroWrapper, HeroText, HeroHead, HeroSub, StyledImage, FlexMain2} from '../components/style.js';
-
+import Fade from 'react-reveal';
 
 export default (props) => (
     
@@ -57,9 +57,11 @@ export default (props) => (
 </FlexMain>
     <FlexParallax>
     <ContentCenter>
+    <Fade bottom>
         <h2>All The Bells And Whistles</h2>
         {/* <p>*grid explaining seo, website load time, responsive design, </p>
         <p>stats or blog to show this?</p> */}
+        </Fade>
     </ContentCenter>
     </FlexParallax>
 <FlexMain>
@@ -95,16 +97,19 @@ export default (props) => (
   </FlexMain>
    <FlexParallax>
    
+   
     <ContentCenter>
+    <Fade bottom>
         <h2>With a touch of flash</h2>
-        
+    </Fade>
     </ContentCenter>
+    
     </FlexParallax>
 
     <FlexMain>
     <Flex>
-        <ContentCenter><h3>"The little things that make a professional site when used in moderation."</h3></ContentCenter>
 
+        <ContentCenter><h3>"The little things that make a professional site when used in moderation."</h3></ContentCenter>
         <SmallContent>
             <h2>Content selection</h2>
             <p>Pages, headings, scripts, images... content is the most important thing. You know your business,
@@ -119,6 +124,8 @@ export default (props) => (
             <h2>Page Transitions</h2>
             <p>Animation goes with navigation. Going from services to contact, page to page, in a unique way is a chance to stand out while also giving content a chance to load while users are distracted.    </p>
         </SmallContent>
+       
+        
     </Flex>
   </FlexMain>
 

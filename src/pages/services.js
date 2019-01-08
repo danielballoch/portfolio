@@ -21,7 +21,7 @@ export default () => (
     </Content2>
     
     <Content2>
-        <h1>Hosting & deployment</h1>
+        <h1>Hosting & Deployment</h1>
         
         <p>I can get everything up and running for you or help along the way. Domain name accusition, site hosting etc. <br/> <a href="#"> See hosting and deployment options.</a></p>
         <hr/>
