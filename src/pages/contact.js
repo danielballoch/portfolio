@@ -63,7 +63,7 @@ export default () => (
     <Content>
     <hr/>
         <h3>Contact Form</h3>
-        <form name="contact" method="post" data-netify="true" netlify>
+        <form name="contact" method="post" data-netlify="true" netlify action="/success">
         <input type="hidden" name="danb contact form" value="contact"/>
 
         <Label for="name">Name:</Label>
