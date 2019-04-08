@@ -28,7 +28,7 @@ export default (props) => (
     </SmallContent>
     <SmallContent>
         <h1>How</h1>
-        <p>Tried and true design methods mixed with cutting edge web stack and hosting technologys.</p>
+        <p>Tried and true design methods mixed with cutting edge web stack and hosting technologies.</p>
     </SmallContent>
     </Flex>
 
@@ -81,12 +81,12 @@ export default (props) => (
     </SmallContent>
     <SmallContent>
         <h2>High Security</h2>
-        <p>For eccomerce or websites with sensitive information on the server-side I leverage specialist third party services. 
+        <p>For E-ccomerce or websites with sensitive information on the server-side I leverage specialist third party services. 
              This means surface areas for attacks are reduced, keeping you and your customers safe.</p>
     </SmallContent>
     <SmallContent>
         <h2>SEO</h2>
-        <p>Search engine optimization implemented. This means load time optimization as well as relavant content/keywords in metadata, footer etc to increase google site ranking.</p>
+        <p>Search engine optimization implemented. This means load time optimization as well as relevant content/keywords in metadata, footer etc to increase google site ranking.</p>
     </SmallContent>
     <SmallContent>
         <h2>Easy Editing</h2>
@@ -131,7 +131,7 @@ export default (props) => (
 
 
   <FlexMain2>   
-            <h2>Lets start your project</h2>
+            <h2>Let's start your project</h2>
             <h1>Phone: </h1>
             <h2>022 078 0868</h2>
             <h1>Email:</h1>

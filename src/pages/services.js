@@ -23,13 +23,13 @@ export default () => (
     <Content2>
         <h1>Hosting & Deployment</h1>
         
-        <p>I can get everything up and running for you or help along the way. Domain name accusition, site hosting etc. <br/> <a href="#"> See hosting and deployment options.</a></p>
+        <p>I can get everything up and running for you or help along the way. Domain name acquisition, site hosting etc. <br/> <a href="#"> See hosting and deployment options.</a></p>
         <hr/>
     </Content2>
     <Content2>
         <h1>CMS Integration</h1>
         
-        <p>Configure a Content Managment System so you can easily make small changes without having to hire someone else or delve into the code. <br/> <a href="#"> Learn about content managment systems.</a></p>
+        <p>Configure a Content Management System so you can easily make small changes without having to hire someone else or delve into the code. <br/> <a href="#"> Learn about content management systems.</a></p>
         
     </Content2>
   </FlexMain2>
